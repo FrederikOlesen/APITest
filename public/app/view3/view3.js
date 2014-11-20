@@ -17,6 +17,7 @@ angular.module('myAppRename.view3', ['ngRoute'])
             success(function (data, status, headers, config) {
                 console.log("Data: " + JSON.stringify(data))
                 $scope.users = data;
+                console.log(data.matches[0].participants[0].stats.winner);
             }).
             error(function (data, status, headers, config) {
 

@@ -1,8 +1,7 @@
 <p>This is the partial for view 3.</p>
 <p>Data is fetched from a REST service, connected to MongoDB </p>
 <ul>
-  <p style="color: red">{{error}}</p>
-  <li ng-repeat="user in users"></li>
-  <li ng-repeat="match in user.matchId">{{match.matchId}}</li>
+    <p style="color: red">{{error}}</p>
+    <li ng-repeat="match in users.matches">{{match.participants[0].stats.winner}}</li>
 </ul>
 </p>
